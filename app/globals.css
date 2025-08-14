@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: #0b1020;
+  --card: #111831;
+  --muted: #b7c0d8;
+}
+
+html, body {
+  background: var(--bg);
+  color: white;
+}
+
+.container {
+  @apply mx-auto px-6;
+  max-width: 1100px;
+}
+
+.section {
+  @apply py-14;
+}
+
+.card {
+  @apply rounded-2xl p-6 shadow-lg;
+  background: var(--card);
+}
+
+.badge {
+  @apply inline-flex items-center rounded-full px-3 py-1 text-xs;
+  background: rgba(99,102,241,0.12);
+  color: #c7c9ff;
+}
+
+.h1 {
+  @apply text-3xl md:text-4xl font-semibold;
+}
+
+.h2 {
+  @apply text-2xl md:text-3xl font-semibold;
+}
+
+.p-muted {
+  color: var(--muted);
+}
