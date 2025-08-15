@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -11,6 +12,27 @@
 html, body {
   background: var(--bg);
   color: white;
+  @apply font-sans text-base leading-relaxed;
+}
+
+h1 {
+  @apply text-4xl md:text-5xl font-bold tracking-tight mt-6 mb-4;
+}
+
+h2 {
+  @apply text-3xl md:text-4xl font-semibold tracking-tight mt-5 mb-3;
+}
+
+p {
+  @apply mt-4;
+}
+
+ul, ol {
+  @apply list-inside list-disc ml-6 mt-4;
+}
+
+a {
+  @apply text-brand-500 hover:underline;
 }
 
 .container {

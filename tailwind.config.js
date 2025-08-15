@@ -5,6 +5,10 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx,mdx}"
   ],
   theme: {
+    container: {
+      center: true,
+      padding: '2rem',
+    },
     extend: {
       colors: {
         brand: {
@@ -13,8 +17,13 @@ module.exports = {
           500: "#6366f1",
           700: "#4338ca"
         }
-      }
+      },
+      fontFamily: {
+        sans: ['Inter', 'sans-serif'],
+      },
     },
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/typography'),
+  ],
 }
